@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProJuris - Blog Jurídico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #000000 0%, #2d2d2d 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de Navegação Simplificada -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-balance-scale text-2xl text-white"></i>
+                <span class="title-font text-2xl font-bold">ProJuris</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <!-- Botão de Contato que rola até o rodapé -->
+                <a href="#footer" class="hover:text-gray-300 transition-all">Contato</a>
+            </div>
+            
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Hero -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="title-font text-4xl md:text-5xl font-bold mb-4">Conhecimento Jurídico Descomplicado</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Análises, estudos e notícias do mundo do Direito por uma estudante apaixonada</p>
+            <div class="flex justify-center space-x-4">
+                <!-- INSIRA O LINK PARA ARTIGOS AQUI -->
+                <a href="INSIRA_O_LINK_PARA_ARTIGOS_AQUI" class="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-all">
+                    Artigos Recentes
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destaque do Blog -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="md:flex">
+                <div class="md:w-1/2">
+                    <!-- COLOQUE AQUI SUA IMAGEM DE DESTAQUE -->
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Imagem de destaque" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2 p-8">
+                    <span class="text-sm text-gray-500">DESTAQUE DO BLOG</span>
+                    <h2 class="title-font text-3xl font-bold mt-2 mb-4">Título do Artigo em Destaque</h2>
+                    <p class="text-gray-700 mb-6">
+                        <!-- COLOQUE AQUI SEU TEXTO DE DESTAQUE -->
+                        Este é um espaço para o texto introdutório do seu artigo em destaque. Aqui você pode apresentar o tema principal que será discutido no artigo completo. Mantenha este parágrafo conciso e atraente para chamar a atenção do leitor.
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Autora do Blog</p>
+                            <p class="text-sm text-gray-500">Publicado em 01/01/2023</p>
+                        </div>
+                    </div>
+                    <!-- INSIRA O LINK PARA O ARTIGO COMPLETO AQUI -->
+                    <a href="INSIRA_O_LINK_DO_ARTIGO_COMPLETO_AQUI" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all">
+                        Ler Artigo Completo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artigos Recentes -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h2 class="title-font text-3xl font-bold mb-2">Artigos Recentes</h2>
+            <div class="w-24 h-1 bg-black mx-auto"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                <!-- COLOQUE AQUI SUA IMAGEM -->
+                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                     alt="Imagem do artigo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-gray-500">DIREITO CIVIL</span>
+                    <h3 class="title-font text-xl font-bold mt-2 mb-3">Título do Artigo 1</h3>
+                    <p class="text-gray-700 mb-4">
+                        <!-- COLOQUE AQUI SEU TEXTO -->
+                        Resumo breve do artigo que será apresentado. Aqui você pode colocar uma introdução ao tema ou os principais pontos abordados.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">05/06/2023</span>
+                        <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                        <a href="INSIRA_O_LINK_DO_ARTIGO_AQUI" class="text-black hover:text-gray-700 transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                <!-- COLOQUE AQUI SUA IMAGEM -->
+                <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                     alt="Imagem do artigo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-gray-500">DIREITO PENAL</span>
+                    <h3 class="title-font text-xl font-bold mt-2 mb-3">Título do Artigo 2</h3>
+                    <p class="text-gray-700 mb-4">
+                        <!-- COLOQUE AQUI SEU TEXTO -->
+                        Resumo breve do artigo que será apresentado. Aqui você pode colocar uma introdução ao tema ou os principais pontos abordados.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">22/05/2023</span>
+                        <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                        <a href="INSIRA_O_LINK_DO_ARTIGO_AQUI" class="text-black hover:text-gray-700 transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                <!-- COLOQUE AQUI SUA IMAGEM -->
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                     alt="Imagem do artigo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-gray-500">DIREITO CONSTITUCIONAL</span>
+                    <h3 class="title-font text-xl font-bold mt-2 mb-3">Título do Artigo 3</h3>
+                    <p class="text-gray-700 mb-4">
+                        <!-- COLOQUE AQUI SEU TEXTO -->
+                        Resumo breve do artigo que será apresentado. Aqui você pode colocar uma introdução ao tema ou os principais pontos abordados.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">14/05/2023</span>
+                        <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                        <a href="INSIRA_O_LINK_DO_ARTIGO_AQUI" class="text-black hover:text-gray-700 transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <!-- INSIRA O LINK PARA TODOS OS ARTIGOS AQUI -->
+            <a href="INSIRA_O_LINK_PARA_TODOS_OS_ARTIGOS_AQUI" class="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-all">
+                Ver Todos os Artigos
+            </a>
+        </div>
+    </section>
+
+    <!-- Destaque de Categoria -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl font-bold mb-2">Destaque: Direito Civil</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Artigos selecionados sobre temas atuais do Direito Civil</p>
+                <div class="w-24 h-1 bg-black mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Artigo 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">DIREITO CIVIL | OBRIGAÇÕES</span>
+                        <h3 class="title-font text-xl font-bold mt-2 mb-3">Título do Artigo sobre Direito Civil</h3>
+                        <p class="text-gray-700 mb-4">
+                            <!-- COLOQUE AQUI SEU TEXTO -->
+                            Introdução ao artigo sobre direito civil. Aqui você pode apresentar os principais pontos que serão discutidos no artigo completo.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">10/04/2023</span>
+                            <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                            <a href="INSIRA_O_LINK_DO_ARTIGO_AQUI" class="text-black hover:text-gray-700 transition-all">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artigo 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">DIREITO CIVIL | CONTRATOS</span>
+                        <h3 class="title-font text-xl font-bold mt-2 mb-3">Título do Artigo sobre Contratos</h3>
+                        <p class="text-gray-700 mb-4">
+                            <!-- COLOQUE AQUI SEU TEXTO -->
+                            Introdução ao artigo sobre direito civil. Aqui você pode apresentar os principais pontos que serão discutidos no artigo completo.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">28/03/2023</span>
+                            <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                            <a href="INSIRA_O_LINK_DO_ARTIGO_AQUI" class="text-black hover:text-gray-700 transition-all">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé com contatos -->
+    <footer id="footer" class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-balance-scale text-2xl text-white"></i>
+                        <span class="title-font text-2xl font-bold">ProJuris</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Blog jurídico criado por uma estudante de Direito apaixonada por compartilhar conhecimento e análises sobre o mundo jurídico.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Categorias</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Direito Civil</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Direito Penal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Direito Constitucional</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Direito do Trabalho</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Direito Administrativo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Artigos Recentes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Jurisprudência</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Dicas para Estudantes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Livros Recomendados</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Contato</h3>
+                    <!-- COLOQUE AQUI SEUS E-MAILS E FORMAS DE CONTATO -->
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-envelope mr-2"></i> contato@projurisblog.com
+                    </p>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-envelope mr-2"></i> outroemail@projurisblog.com
+                    </p>
+                    <p class="text-gray-400">
+                        <i class="fas fa-phone mr-2"></i> (71) 91234-5678
+                    </p>
+                    
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 ProJuris Blog. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simples script para o menu mobile (pode ser expandido)
+        document.querySelector('nav button').addEventListener('click', function() {
+            const menu = document.querySelector('nav .md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('bg-black');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-8');
+            menu.classList.toggle('shadow-lg');
+        });
+    </script>
+</body>
+</html>
