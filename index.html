@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProJuris - Blog Jurídico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #000000 0%, #2d2d2d 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de Navegação Simplificada -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-balance-scale text-2xl text-white"></i>
+                <span class="title-font text-2xl font-bold">ProJuris</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <!-- Botão de Contato que rola até o rodapé -->
+                <a href="#footer" class="hover:text-gray-300 transition-all">Contato</a>
+            </div>
+            
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Hero -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="title-font text-4xl md:text-5xl font-bold mb-4">Conhecimento Jurídico Descomplicado</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Análises, estudos e notícias do mundo do Direito por um grupo de estudantes apaixonados por direto.</p>
+            <div class="flex justify-center space-x-4">
+                <!-- INSIRA O LINK PARA ARTIGOS AQUI -->
+                <a href="https://drive.google.com/drive/folders/1Ed-T0hNPK11XQxDrNmyekTy42GggDKp7?usp=sharing" target="_blank" rel="noopener noreferrer" class="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-all">
+                    Artigos Recentes
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destaque do Blog -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="md:flex">
+                <div class="md:w-1/2">
+                    <!-- COLOQUE AQUI SUA IMAGEM DE DESTAQUE -->
+                    <img src="https://i.imgur.com/hnEXQo9.jpeg" 
+                         alt="Imagem de destaque" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2 p-8">
+                    <span class="text-sm text-gray-500">DESTAQUE DO BLOG</span>
+                    <h2 class="title-font text-3xl font-bold mt-2 mb-4">Propriedade no Direito Civil: Entenda os Direitos, Limites e Formas de Aquisição</h2>
+                    <p class="text-gray-700 mb-6">
+                        <!-- COLOQUE AQUI SEU TEXTO DE DESTAQUE -->
+                        Propriedade no Direito Civil envolve quatro poderes: usar, gozar, dispor e reaver o bem. Segundo o art. 1.228 do Código Civil, o proprietário pode usar, transferir e reivindicar o bem judicialmente. A propriedade pode ser plena, limitada, singular ou em copropriedade, com limites físicos, sociais e legais. A aquisição ocorre de forma originária (ex: usucapião) ou derivada (ex: compra e venda), e a perda da propriedade tem causas específicas.
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">ProJuris</p>
+                            <p class="text-sm text-gray-500">Publicado em 14/05/2025</p>
+                        </div>
+                    </div>
+                    <!-- INSIRA O LINK PARA O ARTIGO COMPLETO AQUI -->
+                    <a href="https://drive.google.com/file/d/1xQLGaGH4xMeIboxVfc1LuRh64pzHs3Mw/view" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all">
+                        Ler Artigo Completo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artigos Recentes -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h2 class="title-font text-3xl font-bold mb-2">Artigos Recentes</h2>
+            <div class="w-24 h-1 bg-black mx-auto"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                <!-- COLOQUE AQUI SUA IMAGEM -->
+                <img src="https://i.imgur.com/zqrKRKk.jpeg" 
+                     alt="Imagem do artigo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-gray-500">DIREITO DE VIZINHANÇA</span>
+                    <h3 class="title-font text-xl font-bold mt-2 mb-3">Direito de Vizinhança: Equilíbrio entre o Uso da Propriedade e a Convivência Harmônica
+</h3>
+                    <p class="text-gray-700 mb-4">
+                        <!-- COLOQUE AQUI SEU TEXTO -->
+                        Previsto nos arts. 1.277 a 1.313 do Código Civil, regula a convivência entre vizinhos, equilibrando o uso da propriedade com o respeito mútuo. Abrange temas como barulho excessivo, poda de árvores, muros, áreas compartilhadas, desvio de águas, passagem forçada e construções que afetem a privacidade. Fundamenta-se na boa-fé, função social da propriedade e convivência pacífica
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">15/05/2025</span>
+                        <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                        <a href="https://drive.google.com/file/d/1POQktww1F7dVswxm4MIi6QjMwl1QdXrs/view" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                <!-- COLOQUE AQUI SUA IMAGEM -->
+                <img src="https://i.imgur.com/kBYi6mq.jpeg" 
+                     alt="Imagem do artigo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-gray-500"></span>
+                    <h3 class="title-font text-xl font-bold mt-2 mb-3">Condomínio: Direitos, Deveres e Regras da Vida em Propriedade Compartilhada</h3>
+                    <p class="text-gray-700 mb-4">
+                        <!-- COLOQUE AQUI SEU TEXTO -->
+                        Previsto nos arts. 1.277 a 1.313 do Código Civil, regula a convivência entre vizinhos, equilibrando o uso da propriedade com o respeito mútuo. Abrange temas como barulho excessivo, poda de árvores, muros, áreas compartilhadas, desvio de águas, passagem forçada e construções que afetem a privacidade. Fundamenta-se na boa-fé, função social da propriedade e convivência pacífica
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">14/05/2025</span>
+                        <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                        <a href="https://drive.google.com/file/d/124RTnj4H93goceU5wuOCOKz3mGuONzoo/view" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                <!-- COLOQUE AQUI SUA IMAGEM -->
+                <img src="https://i.imgur.com/5pUdQaP.jpeg" 
+                     alt="Imagem do artigo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-gray-500">Condomínio Edilício</span>
+                    <h3 class="title-font text-xl font-bold mt-2 mb-3">Condomínio Edilício: Organização, Regras e Direitos na Vida Compartilhada</h3>
+                    <p class="text-gray-700 mb-4">
+                        <!-- COLOQUE AQUI SEU TEXTO -->
+                        Modelo comum em áreas urbanas, o condomínio edilício reúne unidades privativas (como apartamentos ou salas) e áreas comuns (escadas, elevadores etc.). Regulamentado pelo Código Civil, exige registro em cartório e segue regras claras sobre administração, convivência e divisão de despesas.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">14/05/2025</span>
+                        <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                        <a href="https://drive.google.com/file/d/1A_4bTlzFYC_3d-AM3ZYqExNT7cZ-ZI4S/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+
+        <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                <!-- COLOQUE AQUI SUA IMAGEM -->
+                <img src="https://i.imgur.com/H2LPWMw.png" 
+                     alt="Imagem do artigo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-sm text-gray-500">Posse no Direito: teoria e prática</span>
+                    <h3 class="title-font text-xl font-bold mt-2 mb-3">Posse: Entenda os Fundamentos que Diferenciam Domínio e Ocupação</h3>
+                    <p class="text-gray-700 mb-4">
+                        <!-- COLOQUE AQUI SEU TEXTO -->
+                        Posse não é o mesmo que propriedade. No Brasil, prevalece a teoria objetiva (Ihering), que reconhece a posse pelo simples uso do bem, sem exigir intenção de dono. O tema envolve tipos de posse (direta, indireta, justa, injusta, boa-fé, má-fé) e as regras da usucapião — que pode transformar posse em propriedade.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">14/05/2025</span>
+                        <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                        <a href="https://drive.google.com/file/d/1Q4vU4BVss_C6XkVyFvRd9gTcH-LlrlT9/view" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="text-center mt-12">
+            <!-- INSIRA O LINK PARA TODOS OS ARTIGOS AQUI -->
+            <a href="https://drive.google.com/drive/folders/1Ed-T0hNPK11XQxDrNmyekTy42GggDKp7?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-all">
+                Ver Todos os Artigos
+            </a>
+        </div>
+    </section>
+
+    <!-- Destaque de Categoria -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl font-bold mb-2">Direitos reais e responsabilidade civil</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Outos artigos  sobre Direitos reais e responsabilidade civil.</p>
+                <div class="w-24 h-1 bg-black mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Artigo 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">Responsabilidade Civil</span>
+                        <h3 class="title-font text-xl font-bold mt-2 mb-3">Responsabilidade Civil: Resumo Doutrinário e principais apontamentos</h3>
+                        <p class="text-gray-700 mb-4">
+                            <!-- COLOQUE AQUI SEU TEXTO -->
+                            Resumo doutrinário sobre as responsabilidades civil, com sua origem e aplicação em nosso ordenamento jurídico. Responsabilidade Civil nas relações de consumo e a Ação Civil Ex Delicto.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2019</span>
+                            <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                            <a href="https://www.jusbrasil.com.br/artigos/responsabilidade-civil-resumo-doutrinario-e-principais-apontamentos/405788006" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 transition-all">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artigo 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">Direitos reais</span>
+                        <h3 class="title-font text-xl font-bold mt-2 mb-3">Direitos reais: conceito e características</h3>
+                        <p class="text-gray-700 mb-4">
+                            <!-- COLOQUE AQUI SEU TEXTO -->
+                            
+O universo do Direito é complexo e repleto de detalhes. Por conta disso, há nichos na área, como o Direito Civil, que fiscalizam os deveres e direitos de toda uma sociedade, trazendo harmonia na convivência diária do indivíduo.
+
+Além das frentes mais conhecidas, também existem os direitos reais, ao qual determina a ligação legítima entre pessoas, se baseando em posses. Hoje, você verá um pouco mais sobre o assunto e suas principais características!
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">20/03/2023</span>
+                            <!-- INSIRA O LINK PARA O ARTIGO AQUI -->
+                            <a href="https://blog.grancursosonline.com.br/direitos-reais/" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 transition-all">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé com contatos -->
+    <footer id="footer" class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-balance-scale text-2xl text-white"></i>
+                        <span class="title-font text-2xl font-bold">ProJuris</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Blog jurídico criado por estudantes de Direito apaixonados por compartilhar conhecimento e análises sobre o mundo jurídico.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.buscadordizerodireito.com.br/jurisprudencia/listar?categoria=2&subcategoria=16" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-all">Artigos Recentes</a></li>
+                        <li><a href="https://www.jusbrasil.com.br/noticias/20-dicas-para-estudantes-de-direito/135831455" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-all">Dicas para Estudantes</a></li>
+                        <li><a href="https://direitodiario.com.br/10-livros-de-responsabilidade-civil/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-all">Livros Recomendados</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Contato</h3>
+                    <!-- COLOQUE AQUI SEUS E-MAILS E FORMAS DE CONTATO -->
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-envelope mr-2"></i> contato@projurisblog.com
+                    </p>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-envelope mr-2"></i> contato2@projurisblog.com
+                    </p>
+                    <p class="text-gray-400">
+                        <i class="fas fa-phone mr-2"></i> (71) 98466-6615
+                    </p>
+                    
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.instagram.com/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://br.linkedin.com/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ProJuris // LuffyBaiano27©. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simples script para o menu mobile (pode ser expandido)
+        document.querySelector('nav button').addEventListener('click', function() {
+            const menu = document.querySelector('nav .md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('bg-black');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-8');
+            menu.classList.toggle('shadow-lg');
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=LuffyBaiano27/projuris" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
